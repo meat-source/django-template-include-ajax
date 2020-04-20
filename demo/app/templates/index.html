@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load tags %}
+<head>
+    <meta charset="UTF-8">
+    <title>Demo django-template-include-ajax</title>
+    <style>
+        html,body{
+            width:100%;
+        }
+    </style>
+</head>
+<body >
+<center>Данные без ajax</center><br>
+{% include_ajax 'example_only_tablet.html' minWidth='576' maxWidth='1025' %}
+{% include_ajax 'folder/example_only_mobile.html' maxWidth='576' %}
+{% include_ajax 'example_only_desktop.html' minWidth='1025' %}
+
+
+<div style="width:100%">
+	<div style="margin:auto;width:500px">
+{% include_ajax 'example_scripts.html' %}
+	</div>
+</div>
+<br>
+{% include_ajax 'example_not_wrap.html' delWrap='True' %}
+<br><br><br><br>
+
+
+
+
+</body>
+</html>
