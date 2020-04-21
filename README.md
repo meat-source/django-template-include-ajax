@@ -79,6 +79,6 @@ It was tested on django 2.1.10 - 2.2.10, but it will probably work in earlier ve
 
 **Slava Ukolov**  - [github.com/meat-source](https://github.com/meat-source)
 
-##License
+## License
 
 This project is licensed under the MIT license - [LICENSE.md](LICENSE.md)
