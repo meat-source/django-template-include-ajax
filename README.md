@@ -41,14 +41,14 @@ path('include-ajax/<template>', include_ajax),
 
 enabling processing in views
 
-``
+```
 def include_ajax(request, template):
-template = template.replace('&', '/') # for templates that are nested in a folder
-try:
-return render(request, template)
-except TemplateDoesNotExist:
-return HttpResponse(status=404)
-``
+    template = template.replace('&', '/') # for templates that are nested in a folder
+    try:
+        return render(request, template)
+    except TemplateDoesNotExist:
+        return HttpResponse(status=404)
+```
 
 loading the tag in the template
 ``
